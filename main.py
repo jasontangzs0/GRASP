@@ -24,7 +24,7 @@ def check_energy_result(grid_string, agent_start_position, action_list, action_s
         elif action == 'DROP':
             env.drop_all_energy(agent)
 
-    return env.grid[agent.position[0]][agent.position[1]].energy  - cost_per_Step * len(action_list)
+    return env.grid[agent_start_position[0]][agent_start_position[1]].energy  - cost_per_Step * len(action_list)
 
 
 
